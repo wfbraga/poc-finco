@@ -1,0 +1,17 @@
+<div id="<%= dom_id account %>">
+  <p>
+    <strong>Name:</strong>
+    <%= account.name %>
+  </p>
+  <p>
+    <strong>Balance:</strong>
+    <%= account.balance %>
+  </p>
+  <p>
+    <strong>User:</strong>
+    <%= account.user_id %>
+  </p>
+  <p>
+    <%= link_to 'New operation', new_operation_path(:account_id => account.id) %>
+  </p>
+</div>
